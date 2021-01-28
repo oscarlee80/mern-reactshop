@@ -16,7 +16,7 @@ const Rating = ({ value, text, color }) => {
   ))
 
   return (
-    <div className='rating' style={{ textAlign: 'center' }}>
+    <div className='rating'>
       <span>{stars}</span>
       <span style={{ marginLeft: '7px' }}>{text && text}</span>
     </div>

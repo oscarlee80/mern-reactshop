@@ -7,10 +7,6 @@ const orderSchema = mongoose.Schema(
       required: true,
       ref: 'User'
     },
-    name: {
-      type: String,
-      required: true
-    },
     orderItems: [
       {
         name: { type: String, required: true },
@@ -55,7 +51,7 @@ const orderSchema = mongoose.Schema(
       required: true,
       default: 0.0
     },
-    isPayed: {
+    isPaid: {
       type: Boolean,
       required: true,
       default: false
